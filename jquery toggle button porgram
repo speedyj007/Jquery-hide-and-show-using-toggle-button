@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang = "us-en">
+<title>JQuery Hide and Show</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+
+  <link rel="stylesheet" href="w3.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+ 
+
+<style>
+h1{
+font-family:Schadow BT;
+}
+
+hr{
+border-color:blue;
+	box-shadow: 5px 2px 10px blue;
+}
+
+button{
+font-family:Schadow BT;
+font-size:22px;
+
+}
+
+p{
+font-family:Schadow BT;
+font-size:20px;
+}
+</style>
+
+</head>
+
+
+<body>
+<div class = "w3-container">
+<h1>JQuery Hide and Show - Hide and Show in one button.</h1>
+<hr>
+
+<p id = "p1">This element will be hidden after clicking</p><br>
+<p id = "p2" >This element will be Shown after clicking</p><br>
+<button id = "hide" >Hide/Show</button>&nbsp;&nbsp;&nbsp;&nbsp;
+<button id = "reload" >Reload</button>
+<hr>
+
+
+<input type = "checkbox" id = "t1">&nbsp;Hello<br>
+<input type = "checkbox" id = "t2">&nbsp;Hello<br>
+<input type = "checkbox" id = "t3">&nbsp;Hello<br>
+<input type = "checkbox" id = "t4">&nbsp;Hello<br>
+<br>
+<button id = "delcheck" >Delete Check Box</button>
+
+
+</div>
+<script>
+$(document).ready(function(){
+$("#hide").click(function(){
+$("#p1").toggle(2000);
+});
+
+});
+
+
+
+
+</script>
+
+	<script>
+$(document).ready(function(){
+$("#reload").click(function(){
+location.reload();
+
+});
+});
+</script>
+
+
+</body>
+</html>
